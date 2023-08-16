@@ -1,0 +1,162 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Telia Sans';
+    font-style: normal;
+    src: url("TeliaSans-Regular.woff2") format("woff2");
+}
+
+body {
+    font-size: 15px;
+    font-family: Telia Sans;
+    background: #0A192F;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: #ffffffe1
+}
+
+.main {
+    width: 950px;
+    margin: auto;
+    padding: 30px;
+}
+
+.main h1 {
+    color: #fff font-size;
+    line-height: 36px;
+    width: 80%;
+}
+
+.main h2 {
+    color: #ececec
+}
+
+.main h3 {
+    color: #ececec
+}
+
+p{
+    color: #8890B0;
+}
+
+.main p {
+    margin: 1.10em 0;
+    font-size: 1.08em
+}
+
+.main .code {
+    white-space: nowrap;
+    background: #3e4756;
+    padding: 2px 5px;
+    border-radius: 3px
+}
+
+.main a {
+    transition: 150ms ease;
+    font-weight: 600;
+    color: #00da24c4;
+    text-decoration: none;
+    border-bottom: 0 solid transparent
+}
+
+.main a:hover {
+    color: #00ff15;
+    border-bottom: 1px solid #ffffff7e
+}
+
+.main .header {
+    margin-bottom: 30px
+}
+
+.main .body .section {
+    margin: 75px 0
+}
+
+.main .body .section h2::before {
+    content: '>';
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    color: rgba(30, 255, 0, 0.692);
+    width: 2em;
+    margin-left: -2em
+}
+
+.main .body .section h3::before {
+    content: '>';
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    color: rgba(30, 255, 0, 0.692);
+    width: 2em;
+    margin-left: -2em
+}
+
+.topnav {
+    background-color: #0A192F;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.topnav a {
+    float: left;
+    color: #00da24c4;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+.topnav a:hover {
+    
+    transition: ease 0.3s;
+    color: #05961db8;
+}
+
+.topnav a.active {
+    background-color: #00da24c4;
+    color: white;
+}
+
+.topnav a.fi {
+    float: right;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    background-color: #0A192F;
+    overflow: hidden;
+}
+
+.footer p{
+    margin: 0px;
+}
+
+@media screen and (max-width: 800px) {
+    .main {
+        width: 85%;
+        min-width: 0;
+    }
+    .footer {
+        position: auto;
+        height: 3em;
+        background-color: #181818a2;
+        left: 0;
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main .body .section h2::before {
+        display: inline-block;
+    }
+    .main p {
+        font-size: 0.9em;
+    }
+}
