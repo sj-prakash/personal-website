@@ -130,7 +130,6 @@ p{
     color: white;
     padding: 5px;
     text-align: center;
-    background-color: #0A192F;
     overflow: hidden;
 }
 
@@ -144,11 +143,17 @@ p{
         min-width: 0;
     }
     .footer {
-        position: auto;
-        height: 3em;
+        height: 3rem;
         background-color: #181818a2;
-        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         font-size: small;
+        
+    }
+
+    .footer img{
+        position: absolute;
     }
 }
 
